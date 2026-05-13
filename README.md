@@ -35,6 +35,7 @@ flowchart LR
 - [Visitor journey](#visitor-journey)
 - [Page sections](#page-sections)
 - [Getting Started](#getting-started)
+- [🗺️ Repository map](#️-repository-map)
 
 ## Visitor journey
 
@@ -76,3 +77,39 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). Edit `app/page.tsx`.
+
+
+## 🗺️ Repository map
+
+Top-level layout of `coachmike` rendered as a Mermaid mindmap (auto-generated from the on-disk tree).
+
+```mermaid
+mindmap
+  root((coachmike))
+    app/
+      globals.css
+      layout.tsx
+      page.tsx
+    components/
+      theme-provider.tsx
+      ui
+    hooks/
+      use-mobile.tsx
+      use-toast.ts
+    lib/
+      utils.ts
+    public/
+      placeholder-logo.png
+      placeholder-logo.svg
+      placeholder-user.jpg
+      placeholder.jpg
+      placeholder.svg
+    styles/
+      globals.css
+    files
+      README.md
+      next.config.mjs
+      package.json
+      tailwind.config.ts
+      tsconfig.json
+```
