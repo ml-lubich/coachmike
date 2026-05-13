@@ -36,6 +36,7 @@ flowchart LR
 - [Page sections](#page-sections)
 - [Getting Started](#getting-started)
 - [🗺️ Repository map](#️-repository-map)
+- [📊 Code composition](#-code-composition)
 
 ## Visitor journey
 
@@ -112,4 +113,20 @@ mindmap
       package.json
       tailwind.config.ts
       tsconfig.json
+```
+
+
+## 📊 Code composition
+
+File-type breakdown of source under this repo (skips `.git`, `node_modules`, build caches, lockfiles).
+
+```mermaid
+pie showData title File-type composition of coachmike (70 files)
+    "TypeScript" : 57
+    "Image" : 3
+    "JSON" : 3
+    "CSS" : 2
+    "JavaScript" : 2
+    "SVG image" : 2
+    "Markdown" : 1
 ```
