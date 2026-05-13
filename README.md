@@ -32,7 +32,35 @@ flowchart LR
 ## Table of contents
 
 - [Stack](#stack)
+- [Visitor journey](#visitor-journey)
+- [Page sections](#page-sections)
 - [Getting Started](#getting-started)
+
+## Visitor journey
+
+```mermaid
+stateDiagram-v2
+    [*] --> Landing: arrives at /
+    Landing --> Transformations: scroll / nav
+    Landing --> Specialties
+    Landing --> About
+    Transformations --> Booking: CTA
+    Specialties --> Booking
+    About --> Booking
+    Booking --> [*]: schedules session
+```
+
+## Page sections
+
+```mermaid
+flowchart LR
+    HERO["hero + tagline"]
+    TRANS["client transformations"]
+    SPEC["specialties"]
+    WHY["why I do this work"]
+    CTA["booking CTA"]
+    HERO --> TRANS --> SPEC --> WHY --> CTA
+```
 
 ## Stack
 
